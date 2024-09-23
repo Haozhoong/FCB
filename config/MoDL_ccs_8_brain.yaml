@@ -1,0 +1,43 @@
+# Data
+data_type: brain                  # data type: brain knee
+mask_type: cartesiancs            # mask: poisson, cartesian, cartesianrandom, cartesiancs, radial
+sampling_factor: 8                # UnderSampling factor
+n_coils: 8                        # Coils Number
+add_noise: False                  # Add extra Guassian Noise or not
+noise_level: 0.2                  # Noisel level
+img_size: 320                     # size of training images
+label_index_train:                # Samples for training
+    - 0
+    - 5017     
+label_index_val:                  # Samples for validation
+    - 0
+    - 524
+
+---
+# Model
+model_name: MoDL             # model: UNet, FUNet, MoDL, FMoDL, SwinMR
+n_layers: 5                  # n_layers: Number of hidden channels of MoDL
+k_iters: 10                  # k_iters: Number of iterations of MoDL
+pre_train_epoches: 10        #
+
+---
+# Training parameters
+optimizer: RMSprop           # optimizer: RMSprop, Adma
+LR: 1e-3
+weight_decay: 0
+momentum: 0           
+loss: L1                     # loss function: L1, MSE
+epoches: 80                  # total training epoches
+batch_size: 8                # barch size
+repara: False
+
+---
+# Save and load
+save_dir: './export'
+save_sub_dir: ''
+save_label: ''
+resume_training: No
+
+# other
+device: cuda
+vis_interval: 50             # print loss for every ? step
