@@ -16,12 +16,13 @@ This project has the following dependencies:
 
 ### Datasets
 The dataset used in this project is a subset of [FastMRI](https://github.com/facebookresearch/fastMRI). 
-To prepare the data for use in this project, you'll need to pre-process it. This can be done by running the following commands. Please ensure to modify the paths for loading and saving data within the scripts as per your requirements:
+Pre-processing can be done by running the following commands. 
 
 ```bash
 python preprocess/gen_slices.py
 python preprocess/gen_smap.py
 ```
+Please ensure to modify the paths for loading and saving data within the scripts as per your requirements.
 Please ensure to update the data paths in the `utils.py` file to match yours.
 
 ### Training
