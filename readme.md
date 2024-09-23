@@ -5,6 +5,7 @@ PyTorch implementation.
 Reconstructing images from under-sampled Magnetic Resonance Imaging (MRI) signals significantly reduces scan time and improves clinical practice. However, Convolutional Neural Network (CNN)-based methods, while demonstrating great performance in MRI reconstruction, may face limitations due to their restricted receptive field (RF), hindering the capture of global features. This is particularly crucial for reconstruction, as aliasing artifacts are distributed globally. Recent advancements in Vision Transformers have further emphasized the significance of a large RF. In this study, we proposed a novel global Fourier Convolution Block (FCB) with whole image RF and low computational complexity by transforming the regular spatial domain convolutions into frequency domain. Visualizations of the effective RF and trained kernels demonstrated that FCB improves the RF of reconstruction models in practice. The proposed FCB was evaluated on four popular CNN architectures using brain and knee MRI datasets. Models with FCB achieved superior PSNR and SSIM than baseline models and exhibited more details and texture recovery.
 
 ### Architecture
+![Image](https://github.com/Haozhoong/FCB/blob/master/FCB.jpg)
 ![Image](https://github.com/Haozhoong/FCB/blob/master/Architecture.jpg)
 
 ### Environment
