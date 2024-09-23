@@ -22,8 +22,8 @@ Pre-processing can be done by running the following commands.
 python preprocess/gen_slices.py
 python preprocess/gen_smap.py
 ```
-Please ensure to modify the paths for loading and saving data within the scripts as per your requirements.
-Please ensure to update the data paths in the `utils.py` file to match yours.
+- Please ensure to modify the paths for loading and saving data within the scripts as per your requirements.
+- Please ensure to update the data paths in the `utils.py` file to match yours.
 
 ### Training
 ```bash
